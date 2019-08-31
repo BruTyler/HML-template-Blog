@@ -5,6 +5,7 @@
     <title>PSD</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <svg style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -24,71 +25,66 @@
     </svg>
     <div class="g-wrapper">
         <header class="header">
-            <nav class="header__nav g-autonomous-box">
-                <a href="#" class="header__logo-holder g-href-light">
+            <div class="header__nav-wrapper g-autonomous-box">
+                <a href="index.html" class="header__logo-holder g-href-light">
                     <svg class="header__logo">
                         <use xlink:href="#logo"></use>
                     </svg>
                     Waxom
                 </a>
-                <ul class="header__link-list">
-                    <li class="header__link"><a href="#" class="g-href-light">Home</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">About Us</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Portfolio</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Features</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Blog</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Pricing</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Shortcodes</a></li>
-                    <li class="header__link"><a href="#" class="g-href-light">Contact</a></li>
-                    <li class="header__link">
-                        <a href="#" class="g-href-light">
-                            <svg class="header__link-svg">
-                                <use xlink:href="#cart"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="header__link">
-                        <a href="#" class="g-href-light">
-                            <svg class="header__link-svg">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__slider">
-                <div class="header__arrow-wrapper g-flip-h">
-                    <a href="#" class="g-href-light">
-                        <svg class="header__arrow">
-                            <use xlink:href="#slider_arrow"></use>
+                <div class="header__link-list">
+                    <nav class="header__link-list">
+                        <ul class="header__link-list">
+                            <li class="header__link"><a href="#" class="g-href-light">Home</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">About Us</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Portfolio</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Features</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Blog</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Pricing</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Shortcodes</a></li>
+                            <li class="header__link"><a href="#" class="g-href-light">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__cart g-href-light">
+                        <svg class="header__link-svg">
+                            <use xlink:href="#cart"></use>
                         </svg>
-                    </a>
-                </div>
-                <div class="header__notice">
-                    <p class="header__pre-description">Unique and Modern Design</p>
-                    <p class="header__description">Portfolio PSD Template</p>
-                    <p class="header__post-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                    <button class="header__go-btn g-button" onclick="javascript:href('#')">Get Started</button>
-                </div>
-                <div class="header__arrow-wrapper">
-                    <a href="#" class="g-href-light">
-                        <svg class="header__arrow">
-                            <use xlink:href="#slider_arrow"></use>
+                    </button>
+                    <form method="post" action="#" class="header__search-form g-href-light">
+                        <input type="search" class="header__search-input"/>
+                        <svg class="header__link-svg header__search-svg">
+                            <use xlink:href="#search"></use>
                         </svg>
-                    </a>
+                    </form>
                 </div>
             </div>
-            <ul class="header__selector-wrapper">
-                <li class="header__selector g-href-light" onclick="javascript:href('#')"></li>
-                <li class="header__selector g-href-light header__selector_active" onclick="javascript:href('#')"></li>
-                <li class="header__selector g-href-light" onclick="javascript:href('#')"></li>
-                <li class="header__selector g-href-light" onclick="javascript:href('#')"></li>
-                <li class="header__selector g-href-light" onclick="javascript:href('#')"></li>
-            </ul>
+            <div class="header__slider">
+                <a href="#" class="g-href-light g-flip-h">
+                    <svg class="header__arrow g-href-light">
+                        <use xlink:href="#slider_arrow"></use>
+                    </svg>
+                </a>
+                <div class="header__notice">
+                    <span class="header__pre-description">Unique and Modern Design</span>
+                    <span class="header__description">Portfolio PSD Template</span>
+                    <p class="header__post-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                    <button class="header__go-btn g-button">Get Started</button>
+                </div>
+                <a href="#" class="g-href-light">
+                    <svg class="header__arrow">
+                        <use xlink:href="#slider_arrow"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__selector-wrapper">
+                <a href="#" class="header__selector"></a>
+                <a href="#" class="header__selector"></a>
+                <a href="#" class="header__selector"></a>
+                <a href="#" class="header__selector"></a>
+                <a href="#" class="header__selector"></a>
+            </div>
         </header>
-        <nav>
-            <!--  -->
-        </nav>
+
         <main>
             <!--  -->
         </main>
@@ -96,9 +92,4 @@
             <!--  -->
         </footer>
     </div>
-    <script>
-        function href(path) {
-            window.location = path;
-        }
-    </script>
 </body></html>

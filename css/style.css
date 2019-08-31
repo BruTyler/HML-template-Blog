@@ -44,8 +44,9 @@ a {
 }
 
 :focus,
-:active {
-  outline: none;
+:active,
+input {
+    outline: none;
 }
 
 .g-wrapper {
@@ -129,7 +130,7 @@ a {
     z-index: 1;
 }
 
-.header__nav {
+.header__nav-wrapper {
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
@@ -165,10 +166,10 @@ a {
     padding-right: 30px;
 }
 
-.header__link:nth-last-child(1),
-.header__link:nth-last-child(2) {
-    padding-right: 0;
-    padding-left: 30px;
+.header__cart {
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
 }
 
 .header__link-svg {
@@ -176,14 +177,51 @@ a {
     height: 24px;
 }
 
+.header__search-form {
+    position: relative;
+    height: 24px;
+    width: 18px;
+    margin-left: 30px;
+}
+
+.header__search-svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header__search-input {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 24px;
+    width: 18px;
+    background-color: transparent;
+    color: transparent;
+    outline: none;
+    border: none;
+    transition: all 1s ease;
+    z-index: 3;
+}
+
+.header__search-input:focus {
+    right: 0;
+    left: auto;
+    cursor: default;
+    top: 40px;
+    width: 300px;
+    color: #d3c1ad;
+    padding: 0 5px;
+    background-color: #fff;
+    transition: all 1s ease;
+}
+
 .header__slider {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__arrow-wrapper {
-    padding-right: 150px;
+    padding: 0 150px;
 }
 
 .header__arrow {
@@ -241,23 +279,19 @@ a {
 }
 
 .header__selector {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    opacity: 0.5;
-    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
     margin-right: 10px;
+    border: solid 2px rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
 }
 
 .header__selector:last-child {
     margin-right: 0;
 }
 
-.header__selector_active {
-    width: 15px;
-    height: 15px;
-    box-sizing: border-box;
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0);
+.header__selector:hover {
+    background-color: transparent;
     border: solid 2px #d3c1ad;
 }
