@@ -135,6 +135,19 @@ input {
     opacity: 0.9;
 }
 
+.g-href-dark {
+    color: #555;
+}
+
+.g-href-grey {
+    color: #959595
+}
+
+.g-href-grey:hover,
+.g-href-dark:hover {
+    color: #c7b299;
+}
+
 .header {
     background: url(../img/slider_photo1.jpg) no-repeat;
     background-color: rgba(0, 0, 0, 0.6);
@@ -902,7 +915,7 @@ input {
 
 .posts {
     padding-top: 80px;
-    padding-top: 80px;
+    padding-bottom: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -1122,4 +1135,36 @@ input {
 .brands__logo:hover {
     filter: invert(30%);
     cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    min-height: 111px;
+    background-color: #111111;
+}
+
+.copyright__global-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.54;
+    color: #555;
+}
+
+.copyright__main-link {
+    color: #959595;
+}
+
+.copyright__divider {
+    color: #252525;
+}
+
+.news {
+    width: 100%;
+    min-height: 508px;
+    background-color: #191919;
 }
