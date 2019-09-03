@@ -143,8 +143,13 @@ input {
     color: #959595
 }
 
+.g-href-twit {
+    color: #00bff3;
+}
+
 .g-href-grey:hover,
-.g-href-dark:hover {
+.g-href-dark:hover,
+.g-href-twit:hover {
     color: #c7b299;
 }
 
@@ -846,7 +851,6 @@ input {
 .statist__global-wrapper {
     padding-top: 70px;
     padding-bottom: 60px;
-    flex: row nowrap;
     justify-content: center;
     align-items: flex-end;
 }
@@ -1125,7 +1129,7 @@ input {
 }
 
 .brands__link:last-child {
-    margin-right: none;
+    margin-right: 0;
 }
 
 .brands__logo {
@@ -1135,6 +1139,118 @@ input {
 .brands__logo:hover {
     filter: invert(30%);
     cursor: pointer;
+}
+
+.about {
+    width: 100%;
+    min-height: 508px;
+    background-color: #191919;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.about__global-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about__column {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about__general-info {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.about__title {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 33px;
+    padding-top: 20px;
+}
+
+.about__post:hover .about__post-date {
+    color: #fff;
+}
+
+.about__post:hover .about__post-txt {
+    color: #c7b299;
+}
+
+.about__post-date {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+    padding-bottom: 10px;
+}
+
+.about__post-txt {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.about__post-divider {
+    height: 2px;
+    background-color: #252525;
+    margin: 20px 0;
+    border: none;
+}
+
+.about__general-link {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d1d1d1;
+}
+
+.about__widget-wrapper {
+    display: flex;
+    width: 100%;
+    height: 206px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.about__widget {
+    width: 130px;
+    height: 98px;
+}
+
+.posts__twit {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.posts__twit-txt {
+    color: #555555;
+}
+
+.posts__twit-date {
+    color: #363636;
 }
 
 .copyright {
@@ -1161,10 +1277,4 @@ input {
 
 .copyright__divider {
     color: #252525;
-}
-
-.news {
-    width: 100%;
-    min-height: 508px;
-    background-color: #191919;
 }
