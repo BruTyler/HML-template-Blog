@@ -869,7 +869,7 @@ input {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .statist__item:last-child {
@@ -903,7 +903,7 @@ input {
     font-size: 48px;
     line-height: 36px;
     font-weight: 200;
-    color: #ffffff;
+    color: #fff;
     padding-bottom: 21px;
 }
 
@@ -933,7 +933,7 @@ input {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
-    color: #555555;
+    color: #555;
 }
 
 .posts__description {
@@ -978,7 +978,7 @@ input {
 }
 
 .posts__item:hover .posts__item-description {
-    color: #ffffff;
+    color: #fff;
 }
 
 .posts__item:hover .posts__item-day {
@@ -1023,7 +1023,7 @@ input {
     left: 20px;
     top: 20px;
     width: 50px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .posts__item-day {
@@ -1062,7 +1062,7 @@ input {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-    color: #555555;
+    color: #555;
 }
 
 .posts__item-description {
