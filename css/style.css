@@ -52,6 +52,11 @@
     font-weight: 400;
 }
 
+@font-face {
+  font-family: Socialico;
+  src: url(../fonts/Socialico/Socialico.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -84,6 +89,8 @@ input {
     min-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .g-autonomous-box {
@@ -1506,7 +1513,30 @@ input {
     }
 
     .mobile {
-        display: none;
+        background: url(../img/iphone_in_hand.jpg) no-repeat left 37px bottom /175px;
+        min-height: 495px;
+        padding: 40px 40px 0 50px;
+    }
+
+    .mobile__title {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .mobile__description {
+        font-family: Montserrat;
+        font-size: 15px;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+
+    .mobile__benefits-list {
+        padding-left: 155px;
+        padding-right: 0;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .statist__global-wrapper {
@@ -1548,22 +1578,46 @@ input {
     }
 
     .posts {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .posts__description {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 15px 25px;
+    }
+
+    .posts__item {
+        margin-bottom: 15px;
+    }
+
+    .posts__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .posts__pagination {
         display: none;
     }
 
     .brands {
-        height: 410px;
+        box-sizing: border-box;
+        height: 200px;
         flex-wrap: wrap;
+        padding: 0 40px;
+        justify-content: space-between;
+        align-items: center;
+
     }
 
     .brands__link,
     .brands__link:last-child {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin: 0;
+        padding: 0;
     }
 
     .brands__logo {
-        width: 180px;
+        width: 120px;
     }
 
     .about {
@@ -1606,8 +1660,41 @@ input {
     .presentation__description {
         font-size: 13px;
     }
+}
 
-    .brands__logo {
-        width: 150px;
-    }
+.social {
+    position: fixed;
+    top: 50%;
+    right: -255px;
+    width: 300px;
+    height: 300px;
+    border: solid 1px transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 10;
+    transition: right 1s ease-out,
+        background-color 1s ease-out;
+}
+
+.social:hover {
+    right: -120px;
+    background-color: #fff;
+}
+
+.social:hover .social__link {
+    color: #000;
+}
+
+.social__link {
+    text-align: left;
+    display: flex;
+    align-items: center;
+      font-family: Socialico;
+  font-size: 60px;
+  color: #ccc;
+}
+
+.social__text {
+    font-family: Montserrat;
+    font-size: 20px;
 }
