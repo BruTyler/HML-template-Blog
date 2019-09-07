@@ -1145,6 +1145,7 @@ input {
     height: 489px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .brands:before {
@@ -1158,12 +1159,7 @@ input {
 }
 
 .brands__link {
-    margin: auto;
-    display: block;
     position: relative;
-    border: none;
-    outline: none;
-    background-color: transparent;
     margin-right: 90px;
 }
 
@@ -1375,14 +1371,14 @@ input {
     font-size: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .g-button {
         height: 30px;
     }
 
     .g-wrapper {
-        max-width: 800px;
-        min-width: 500px;
+        max-width: 768px;
+        min-width: 480px;
     }
 
     .g-autonomous-box {
@@ -1754,7 +1750,7 @@ input {
 
 @media (max-width: 655px) {
     .services__link {
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         box-sizing: border-box;
     }
@@ -1764,8 +1760,9 @@ input {
     }
 
     .services__title {
-        width: 120px;
+        width: 110px;
         font-size: 14px;
+        margin: 5px;
     }
 
     .services__description {
@@ -1781,7 +1778,7 @@ input {
     }
 
     .mobile {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .brands {
