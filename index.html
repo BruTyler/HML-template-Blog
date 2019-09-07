@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PSD</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="g-wrapper">
         <header class="header">
@@ -16,12 +16,12 @@
                     </svg>
                     Waxom
                 </a>
-                <div class="header__mobile-menu">
+                <div class="header__mobile-menu" id="header__mobile-menu">
                     <div class="header__mobile-menu-upper"></div>
                     <div class="header__mobile-menu-middle"></div>
                     <div class="header__mobile-menu-bottom"></div>
                 </div>
-                <div class="header__link-wrapper">
+                <div class="header__link-wrapper" id="header__link-wrapper">
                     <nav class="header__link-nav">
                         <ul class="header__link-list">
                             <li class="header__link"><a href="#" class="g-href-light">Home</a></li>
@@ -48,29 +48,29 @@
                 </div>
             </div>
             <div class="header__slider">
-                <a href="#" class="g-href-light g-flip-h">
+                <button class="g-href-light g-flip-h" id="header__prev-slide">
                     <svg class="header__arrow g-href-light">
                         <use xlink:href="#slider_arrow"></use>
                     </svg>
-                </a>
+                </button>
                 <div class="header__notice">
                     <span class="header__pre-description">Unique and Modern Design</span>
                     <span class="header__description">Portfolio PSD Template</span>
                     <p class="header__post-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                     <button class="g-button">Get Started</button>
                 </div>
-                <a href="#" class="g-href-light">
+                <button class="g-href-light" id="header__next-slide">
                     <svg class="header__arrow">
                         <use xlink:href="#slider_arrow"></use>
                     </svg>
-                </a>
+                </button>
             </div>
             <div class="header__selector-wrapper">
-                <a href="#" class="header__selector"></a>
-                <a href="#" class="header__selector"></a>
-                <a href="#" class="header__selector"></a>
-                <a href="#" class="header__selector"></a>
-                <a href="#" class="header__selector"></a>
+                <button class="header__selector header__selector_active" id="header__selector_0" data-slide="img/slider_photo1.jpg"></button>
+                <button class="header__selector" id="header__selector_1" data-slide="img/slider_photo2.jpg"></button>
+                <button class="header__selector" id="header__selector_2" data-slide="img/slider_photo3.jpg"></button>
+                <button class="header__selector" id="header__selector_3" data-slide="img/slider_photo4.jpg"></button>
+                <button class="header__selector" id="header__selector_4" data-slide="img/back_photo.jpg"></button>
             </div>
         </header>
         <main>
@@ -460,7 +460,9 @@
         </aside>
     </div>
 </body>
-<script src="/script/video.js"></script>
+<script src="script/jquery-3.4.1.min.js"></script>
+<script src="script/slider.js"></script>
+<script src="script/video.js"></script>
 <svg style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="logo" viewBox="0 0 66 59">
