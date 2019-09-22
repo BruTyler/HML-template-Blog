@@ -1839,6 +1839,10 @@ button {
         padding-left: 25px;
         padding-top: 3px;
     }
+    
+    .posts__item-link {
+        font-size: 18px;
+    }
 
     .brands {
         padding: 0 20px;
@@ -1903,7 +1907,7 @@ button {
     .mobile {
         background-position: left 10px bottom;
         background-size: 150px;
-        padding: 20px 8px 0;
+        padding: 20px 14px 0;
         min-height: 430px;
     }
     
@@ -1913,15 +1917,54 @@ button {
     }
     
     .mobile__benefits-list {
-        padding-left: 140px;
+        padding-left: 135px;
         padding-bottom: 10px;
         line-height: 20px;
         font-size: 14px;
     }
     
+    .mobile__benefit {
+        padding-left: 20px;
+    }
+    
+    .mobile__benefit::before {
+        background-size: 15px;
+        width: 15px;
+        height: 15px;
+    }
+    
     .posts {
         padding-top: 20px;
         padding-bottom: 5px;
+    }
+    
+    .posts__item {
+        width: 100%;
+    }
+    
+    .posts__item-back {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+    }
+    
+    .posts__item-title {
+        display: flex;
+        align-items: flex-end;
+        top: none;
+        bottom: 130px;
+        left: 10px;
+    }
+    
+    .posts__item-description {
+        display: flex;
+        align-items: flex-end;
+        bottom: 60px;
+        left: 10px;
+    }
+    
+    .posts__item-link {
+        left: 10px;
     }
     
     .posts__description {
