@@ -776,7 +776,6 @@ button {
     position: relative;
     width: 570px;
     margin: 210px auto;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1391,8 +1390,9 @@ button {
     }
 
     .g-wrapper {
-        max-width: 768px;
-        min-width: 480px;
+        max-width: inherit;
+        min-width: 100px;
+        width: 100%;
     }
 
     .g-autonomous-box {
@@ -1410,6 +1410,21 @@ button {
         justify-content: flex-start;
         align-items: flex-start;
         padding-bottom: 20px;
+    }
+    
+    .header__pre-description {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+
+    .header__description {
+        font-size: 48px;
+        padding-bottom: 18px;
+    }
+
+    .header__post-description {
+        font-size: 16px;
+        padding-bottom: 35px;
     }
 
     .header__nav-wrapper {
@@ -1437,22 +1452,20 @@ button {
         width: 50px;
         background-color: #333;
         outline: solid 1px #ccc;
-        z-index: 5;
+        z-index: 9;
     }
 
     .header__link-wrapper {
         position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 200px;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 540px;
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
+        flex-wrap: wrap;
         background: linear-gradient(to top, #211b19 0%, #4e3427 100%);
-        border: solid 1px #ccc;
-        border-radius: 5px;
-        z-index: 3;
+        z-index: 8;
         visibility: hidden;
     }
 
@@ -1478,24 +1491,31 @@ button {
     .header__mobile-menu_open .header__mobile-menu-middle {
         opacity: 0;
     }
+    
+    .header__link-nav {
+        display: block;
+        width: 100%;
+    }
 
     .header__link-list {
-        margin-top: 40px;
+        margin-top: 35px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 15px;
+        margin-left: 45px;
     }
 
     .header__link {
         display: flex;
         align-items: center;
-        width: 90px;
+        width: 140px;
         border-bottom: solid 1px #ccc;
-        height: 40px;
+        height: 45px;
         padding-right: 0px;
+        padding-left: 5px;
         margin: 2px;
         position: relative;
+        font-size: 18px;
     }
 
     .header__link:hover::after {
@@ -1503,29 +1523,40 @@ button {
         content: "";
         bottom: -1px;
         left: 0;
-        width: 120px;
+        width: 200px;
         height: 2px;
-        background-color: #ccc;
+        background-color: #d3c1ad;
     }
 
     .header__cart,
     .header__search-form {
         padding: 0;
-        margin: 25px 0 0 20px;
+        margin: 0 0 0 55px;
+    }
+    
+    .header__link-svg {
+        width: 24px;
+        height: 36px;
+    }
+    
+    .header__search-svg {
+        width: 30px;
     }
 
     .header__search-input {
-        left: 0;
+        left: 5px;
+        top: 5px;
+        height: 30px;
+        font-size: 16px;
     }
 
     .header__search-input:focus {
         position: absolute;
-        left: 20px;
-        cursor: default;
-        top: 0;
-        width: 150px;
+        left: 45px;
+        top: 5px;
+        width: 180px;
         color: #d3c1ad;
-        padding: 0 5px;
+        padding: 0 10px;
         background-color: #fff;
     }
 
@@ -1585,7 +1616,6 @@ button {
 
     .services__description {
         text-align: left;
-        width: 275px;
         padding-bottom: 10px;
     }
 
@@ -1622,7 +1652,7 @@ button {
     }
 
     .presentation__description {
-        width: 450px;
+        width: 85%;
         padding-bottom: 20px;
     }
 
@@ -1758,14 +1788,29 @@ button {
 }
 
 @media (max-width: 655px) {
+    
+    .header__pre-description {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .header__description {
+        font-size: 36px;
+        padding-bottom: 16px;
+    }
+
+    .header__post-description {
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+    
     .services__link {
         justify-content: space-between;
         width: 100%;
-        box-sizing: border-box;
     }
 
     .services__icon {
-        width: 52px;
+        width: 48px;
     }
 
     .services__title {
@@ -1775,7 +1820,7 @@ button {
     }
 
     .services__description {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .purchase__title {
@@ -1789,6 +1834,11 @@ button {
     .mobile {
         padding-bottom: 20px;
     }
+    
+    .mobile__benefit {
+        padding-left: 25px;
+        padding-top: 3px;
+    }
 
     .brands {
         padding: 0 20px;
@@ -1796,5 +1846,119 @@ button {
 
     .brands__logo {
         width: 110px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .header {
+        height: 110px;
+        padding-bottom: 0;
+    }
+    
+    .header__pre-description,
+    .header__description,
+    .header__post-description {
+        display: none;
+    }
+    
+    .header__link-wrapper {
+        border-bottom: 1.5px solid #fff;
+    }
+    
+    .services {
+        background-image: linear-gradient(to bottom, #444 0%, #4e3427 100%);
+    }
+    
+    .services__link {
+        background-color: #fff;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 2px 0;
+    }
+
+    .services__icon {
+        width: 36px;
+        padding: 5px 10px 0 3px;
+    }
+
+    .services__title {
+        width: 130px;
+        font-size: 14px;
+        margin: 5px;
+        text-align: left;
+    }
+
+    .services__description {
+        font-size: 13px;
+        line-height: 1.5em;
+        width: auto;
+    }
+    
+    .purchase__note {
+        font-size: 14px;
+    }
+    
+    .mobile {
+        background-position: left 10px bottom;
+        background-size: 150px;
+        padding: 20px 8px 0;
+        min-height: 430px;
+    }
+    
+    .mobile__description {
+        padding: 0;
+        line-height: 22px;
+    }
+    
+    .mobile__benefits-list {
+        padding-left: 140px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .posts {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .posts__description {
+        line-height: 22px;
+    }
+    
+    .brands{
+       height: 150px; 
+    }
+    
+    .brands__logo {
+        width: 80px;
+    }
+    
+    .copyright {
+        background-color: #222;
+    }
+    
+    .copyright__global-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between; 
+        align-items: flex-end;
+        padding: 15px;
+    }
+    
+    .copyright__nav, 
+    .copyright__source {
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .copyright__divider {
+        display: none;
     }
 }
